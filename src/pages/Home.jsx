@@ -16,8 +16,8 @@ const Home = () => {
             <h2 className="page-title">Our Products</h2>
             <div className="product-grid">
                 {products.map((product) => (
-
-                   <div className="product-card" key={product.id}>
+                    <ProductCard product={product} />
+                 /*   <div className="product-card" key={product.id}>
                         <img src={product.image} alt="" className="product-card-image" />
                          <div className="product-card-content">
                             <h3 className='product-card-name'>{product.name}</h3>
@@ -27,7 +27,7 @@ const Home = () => {
                             <Link className='btn btn-secondary'>View Details</Link>
                             <button className='btn btn-primary'>Add to Cart</button>
                             </div>
-                    </div>
+                    </div>*/
                 ))}
             </div>
         </div>
